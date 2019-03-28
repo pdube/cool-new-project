@@ -1,6 +1,6 @@
 version: "3"
 services:
-  cmc_mysql:
+  cnp_mysql:
     image: mysql:8
     environment:
      - MYSQL_ALLOW_EMPTY_PASSWORD=true
@@ -9,7 +9,7 @@ services:
      - ~/.cnp/docker_mysql_data:/var/lib/mysql
     ports:
      - "3306:3306"
-  cmc_redis:
+  cnp_redis:
     image: redis
     restart: unless-stopped
     ports:
